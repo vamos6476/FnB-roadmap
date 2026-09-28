@@ -1,9 +1,45 @@
-"How to update ? " (for me)
+How to update
 
-if food_career_roadmap_2026_v00.html generated, ;
-cp ~/Downloads/food_career_roadmap_2026_v11.html index.html  # copy and paste new file to "index.html" ;
+When a new version of the career roadmap HTML is generated, replace the existing index.html with the new file and push the changes to GitHub.
 
-git status      # check status(updates) ; 
-git add index.html ; 
-git commit -m "whatever message.. " '
-git push ; 
+1. Replace index.html
+
+For example, if food_career_roadmap_2026_v11.html is downloaded:
+
+cp ~/Downloads/food_career_roadmap_2026_v11.html index.html
+
+This copies the new HTML file and overwrites the existing index.html.
+
+2. Check the changes
+
+git status
+
+Check that index.html appears as modified.
+
+3. Stage the updated file
+
+git add index.html
+
+4. Commit the changes
+
+git commit -m "Update career roadmap v11"
+
+The commit message can be changed as needed.
+
+5. Push to GitHub
+
+git push
+
+After the push is complete, GitHub Pages will automatically update the website using the new index.html.
+
+⸻
+
+Quick reference
+
+cp ~/Downloads/food_career_roadmap_2026_v11.html index.html
+git status
+git add index.html
+git commit -m "Update career roadmap v11"
+git push
+
+Note: Run these commands from the local FnB-roadmap repository directory.
