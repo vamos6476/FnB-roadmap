@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>조리·외식 Career Roadmap 2026</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --text:#20242a; --muted:#667085; --line:#e4e7ec;
+  --accent:#344054; --soft:#f2f4f7; --good:#067647; --warn:#b54708; --trackA:#5bbf9a; --trackAsoft:#e9f8f2; --trackB:#f2a65a; --trackBsoft:#fff1e3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.65}
+.wrap{max-width:1180px;margin:0 auto;padding:42px 22px 80px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px;margin-bottom:24px}
+h1{font-size:34px;line-height:1.2;margin:0 0 12px}
+h2{font-size:26px;margin:42px 0 16px}
+h3{font-size:20px;margin:0 0 10px}
+h4{font-size:16px;margin:20px 0 8px}
+p{margin:8px 0}
+.small,.meta{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:5px 9px;border-radius:999px;font-size:13px;margin:4px 4px 4px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:14px 0}
+.trackA{border-left:5px solid var(--trackA)}.trackB{border-left:5px solid var(--trackB)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px;margin:14px 0 20px}
+th,td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{background:var(--soft);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+a{color:#175cd3;text-decoration:none} a:hover{text-decoration:underline}
+.notice{background:#fffaeb;border:1px solid #fedf89;border-radius:12px;padding:14px 16px;margin:14px 0}
+.good{color:var(--good);font-weight:700}.warn{color:var(--warn);font-weight:700}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:10px 0}
+summary{cursor:pointer;padding:14px 16px;font-weight:700}
+details .inside{padding:0 16px 16px}
+.overview{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin:22px 0 34px}
+.current-state{font-size:22px;font-weight:800;margin:0 0 20px}.current-state span{font-weight:600;color:var(--muted)}
+.tree-svg{display:block;width:100%;height:auto;min-height:390px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:14px 0}
+.job.trackA{border-left:6px solid var(--trackA)}.job.trackB{border-left:6px solid var(--trackB)}
+.job-intro{margin:4px 0 14px;color:#344054}
+.job details{margin-top:12px;background:#f9fafb}
+.job details summary{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.job details summary::after{content:"＋";font-size:20px;color:#667085}
+.job details[open] summary::after{content:"－"}
+.job details[open] summary{border-bottom:1px solid var(--line)}
+.section-note{background:#f8f9fb;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:10px 0 18px;color:#475467}
+.prep{border-radius:14px;padding:16px 18px;margin:18px 0;border:1px solid var(--line)}
+.trackA .prep{background:var(--trackAsoft);border-color:#b7e7d5}
+.trackB .prep{background:var(--trackBsoft);border-color:#ffd4aa}
+.prep h4{margin:0 0 8px}.prep ul{margin:8px 0 0;padding-left:20px}
+.year-tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:3px 8px;margin-right:5px;background:#f2f4f7;border:1px solid #d0d5dd}.active-tag{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:3px 8px;background:#ecfdf3;color:#067647;border:1px solid #abefc6}.need-check{color:#b42318;font-weight:800}
+.source-note{font-size:13px;color:#667085;margin-top:8px}
+.job-link{display:inline-block;padding:3px 8px;margin:2px 3px 2px 0;border-radius:999px;font-size:12px;font-weight:700;text-decoration:none}
+.job-link.a{background:var(--trackAsoft);color:#167a5a;border:1px solid #b7e7d5}
+.job-link.b{background:var(--trackBsoft);color:#a45713;border:1px solid #ffd4aa}
+.job-link:hover{text-decoration:none;filter:brightness(.97)}
+.job:target{outline:3px solid rgba(52,64,84,.16);outline-offset:4px}
+footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:20px 12px 60px}h1{font-size:28px}table{display:block;overflow-x:auto}.overview{padding:16px}.current-state{font-size:19px}.tree-svg{min-height:520px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="hero">
+  <div class="meta">기준일: 2026-09-28 · 2025~2026 채용공고 비교 · 개인 Career Research</div>
+  <h1>조리·외식 Career Roadmap</h1>
+  <p><strong>현재 기반:</strong> 분식·백반 매장운영 약 2~3년 + 대량조리 경험</p>
+  <p><strong>목표:</strong> 2~3년 이내 진입 가능한 전문직을 만들되, 배우자의 근무지 이동에도 경력을 이어갈 수 있는 방향</p>
+  <span class="badge">한식조리기능사</span><span class="badge">한식조리산업기사</span>
+  <span class="badge">대량조리</span><span class="badge">매장운영</span><span class="badge">위생·원가·인력관리</span>
+</section>
+
+<section class="overview">
+  <div class="current-state">현재 상황 : <span>분식·백반 매장운영 약 2~3년 + 대량조리 경험</span></div>
+  <svg class="tree-svg" viewBox="0 0 1100 430" role="img" aria-label="현장 전문직과 기업 전문직 Career Overview">
+    <defs>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+        <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".10"/>
+      </filter>
+      <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L6,3 z" fill="#98a2b3"/>
+      </marker>
+    </defs>
+    <rect x="390" y="18" width="320" height="64" rx="18" fill="#101828" filter="url(#shadow)"/>
+    <text x="550" y="46" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">조리·외식 Career Roadmap</text>
+    <text x="550" y="67" text-anchor="middle" fill="#d0d5dd" font-size="13">2~3년 내 전문성 있는 진로 탐색</text>
+
+    <path d="M550 82 L550 115 M550 115 L275 115 L275 145 M550 115 L825 115 L825 145" stroke="#98a2b3" stroke-width="3" fill="none"/>
+
+    <rect x="105" y="145" width="340" height="66" rx="16" fill="#5bbf9a" filter="url(#shadow)"/>
+    <text x="275" y="174" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">TRACK A · 현장 전문직</text>
+    <text x="275" y="195" text-anchor="middle" fill="#eaecf0" font-size="13">대량조리 · 현장운영 · 조리관리 중심</text>
+
+    <rect x="655" y="145" width="340" height="66" rx="16" fill="#f2a65a" filter="url(#shadow)"/>
+    <text x="825" y="174" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">TRACK B · 기업 전문직</text>
+    <text x="825" y="195" text-anchor="middle" fill="#f2f4f7" font-size="13">운영 · 개발 · 생산관리로 경험 확장</text>
+
+    <path d="M275 211 L275 240 M825 211 L825 240" stroke="#98a2b3" stroke-width="2.5"/>
+
+    <g fill="#fff" stroke="#d0d5dd" stroke-width="1.5" filter="url(#shadow)">
+      <rect x="45" y="240" width="215" height="60" rx="14"/><rect x="290" y="240" width="215" height="60" rx="14"/>
+      <rect x="45" y="326" width="215" height="60" rx="14"/><rect x="290" y="326" width="215" height="60" rx="14"/>
+      <rect x="595" y="240" width="215" height="60" rx="14"/><rect x="840" y="240" width="215" height="60" rx="14"/>
+      <rect x="595" y="326" width="215" height="60" rx="14"/><rect x="840" y="326" width="215" height="60" rx="14"/>
+    </g>
+
+    <g fill="#101828" font-size="15" font-weight="700" text-anchor="middle">
+      <text x="152" y="267">단체급식 전문 조리사</text><text x="397" y="267">조리실장 · 조리책임자</text>
+      <text x="152" y="353">급식업체 운영관리</text><text x="397" y="353">군부대 민간조리원</text>
+      <text x="702" y="267">Franchise SV</text><text x="947" y="267">외식 Menu · 조리 R&amp;D</text>
+      <text x="702" y="353">HMR · Central Kitchen R&amp;D</text><text x="947" y="353">식품 생산 · HACCP 관리</text>
+    </g>
+    <g fill="#667085" font-size="12" text-anchor="middle">
+      <text x="152" y="286">학교 · 병원 · 기업 · 복지시설</text><text x="397" y="286">조리 + 팀·주방 관리</text>
+      <text x="152" y="372">식수 · 인력 · 손익 · 고객사</text><text x="397" y="372">군부대 공무직 조리</text>
+      <text x="702" y="286">가맹점 운영 · QSC · 매출</text><text x="947" y="286">메뉴 · 원가 · 표준화</text>
+      <text x="702" y="372">양산 Recipe · 공정화</text><text x="947" y="372">생산공정 · 위생 · 재고</text>
+    </g>
+  </svg>
+</section>
+
+<h2><span style="color:var(--trackA)">TRACK A</span> · 현장 전문직</h2>
+<p>학력보다 <strong>조리자격 + 대량조리 실무 + 현장관리 경험</strong>이 직접적으로 작동하는 트랙입니다. 전국적으로 학교·병원·기업체·군부대 등에 수요가 있어 지역 이동 대응력이 상대적으로 높습니다.</p>
+
+<section class="job trackA" id="job-a1">
+<h3>A-1. 단체급식 전문 조리사</h3>
+<div class="job-intro"><p>학교, 병원, 복지시설, 기업 구내식당 등에서 정해진 시간 안에 다수 인원의 식사를 생산합니다. 개인 음식점보다 표준화, 식품위생, 식수 관리, 협업이 중요합니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+
+<table>
+<tr><th>요구자격</th><td>공고별 상이. 한식조리사 자격증을 필수로 두는 공고와 무관/우대 공고가 모두 존재.</td></tr>
+<tr><th>경력</th><td>신입 가능 공고부터 경력 우대까지 다양. 현재의 대량조리 경험을 연결하기 좋음.</td></tr>
+<tr><th>학력</th><td>학력무관 공고 다수.</td></tr>
+<tr><th>연봉/급여</th><td>공고별 차이가 큼. 아래 최신 사례 참고.</td></tr>
+<tr><th>실제 업무</th><td>전처리, 대량조리, 배식, 식재료·재고관리, 주방·기구 위생관리.</td></tr>
+<tr><th>지역 이동성</th><td><strong>매우 높음</strong> — 학교·병원·복지시설·사업체 급식소가 전국에 존재.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">높음</span>. 현재 경력 + 조리자격을 갖추면 직접 지원 가능한 범위가 넓음.</td></tr>
+</table>
+
+
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>조리기능사 1개 이상:</strong> 2026 아라마크 공고는 조리기능사를 필수로 요구했고, GS계열 단체급식 공고는 우대했습니다. 지원 범위를 넓히는 가장 직접적인 자격입니다.</li>
+<li><strong>단체급식 경력 1~3년:</strong> 일반 조리경력보다 '단체급식'을 명시하는 공고가 많습니다. 첫 진입 후 1~2년을 공식 경력으로 만드는 것이 다음 단계에 유리합니다.</li>
+<li><strong>위생·안전관리 경험:</strong> 전처리·조리만이 아니라 위생·안전관리 업무가 반복적으로 포함됩니다.</li>
+<li><strong>경력기술서:</strong> 하루 식수, 담당 메뉴, 조리 인원, 발주·재고·위생 업무를 숫자로 정리해 두는 것이 좋습니다.</li>
+</ul>
+</div>
+<div class="section-note"><strong>표 읽는 법:</strong> <strong>필요 조건</strong>에는 지원자가 갖춰야 할 학력·경력·자격증 등 자격요건과 우대사항만 정리했습니다. 근무시간·근무지·고용형태·담당업무·급여는 아래 <strong>근무조건(현재 진행중인 공고)</strong>에서 분리해 확인할 수 있습니다.</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>신당종합사회복지관 · 계약직 조리사</td><td>학력·경력 무관. <strong>조리사 자격증 필수</strong>. 집단급식소 유경험자 우대. 사회복지시설 종사자 결격사유에 해당하지 않아야 함.</td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KF10582609230002" target="_blank">고용24</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>복지관 단체급식 조리</td><td>2026.9.22~10.7 / 한식조리사 자격증 필수 / 단체급식·복지관 경험 우대</td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet&wantedAuthNo=KF10602609220015" target="_blank">고용24</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>창원 단체급식 조리실장·참모</td><td>학력무관 / 경력 3년 우대 / 월 270~350만원 / 메뉴기획·팀관리·식품안전·예산·재고</td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet&wantedAuthNo=K131312609100022" target="_blank">고용24</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>아라마크 단체급식 조리사</td><td>학력무관 · <strong>경력 1년 이상 + 조리기능사 자격증 필수</strong>. 단체급식 300식 이상 경험, 조리대회 수상, 영양사·기타 식음 관련 자격, Office 활용능력 우대.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54647734" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>GS그룹 엘리시안FS 조리사</td><td>학력무관 · <strong>경력 3년 이상</strong>. 조리기능사 및 해당직무 근무경험 우대.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54740414" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>복지관 단체급식 조리</td><td>2026.9.22~10.7 / 한식조리사 자격증 필수 / 단체급식·복지관 경험 우대</td><td>공고 상세 참조</td></tr>
+<tr><td>창원 단체급식 조리실장·참모</td><td>학력무관 경력 3년 우대 메뉴기획·팀관리·식품안전·예산·재고</td><td>월 270~350만원</td></tr></table>
+
+</div></details>
+</section>
+
+<section class="job trackA" id="job-a2">
+<h3>A-2. 단체급식 조리실장 / 조리책임자</h3>
+<div class="job-intro"><p>직접 조리하면서 동시에 조리팀, 주방, 위생, 행사, 재고 등을 책임지는 현장 관리자입니다. 현재 경력을 장기적으로 가장 자연스럽게 확장할 수 있는 직위 중 하나입니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+
+<table>
+<tr><th>요구자격</th><td>조리사면허·한식/중식/양식 자격 우대 사례 다수. 사업장별 상이.</td></tr>
+<tr><th>경력</th><td>최근 공고 기준 경력무관~3년 이상까지 폭이 큼.</td></tr>
+<tr><th>학력</th><td>학력무관 사례 다수.</td></tr>
+<tr><th>연봉/급여</th><td>월 270~500만원 또는 연 4,000~5,000만원 수준 사례 확인. <strong>주5/6일 및 근무시간 차이를 반드시 같이 비교해야 함.</strong></td></tr>
+<tr><th>실제 업무</th><td>대량조리, 메뉴·행사 대응, 조리팀 지휘, 교육, 위생·안전, 재고·예산 관리.</td></tr>
+<tr><th>지역 이동성</th><td><strong>높음</strong>. 위탁급식 기업의 전국 사업장 경력으로 연결 가능.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">가능</span>. 다만 '일반 식당 경력'을 '대량급식 경력'으로 보지 않는 기업도 있어 1~2년 단체급식 경력 추가가 안전함.</td></tr>
+</table>
+
+
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>단체급식 조리경력:</strong> 2025~2026 공고에서 2~3년 이상을 요구하는 사례가 반복됩니다. 상위 학교급식 실장에서는 7년 이상 사례도 있습니다.</li>
+<li><strong>조리기능사/조리사면허:</strong> 동원홈푸드 사례는 조리기능사 1개를 필수로 두었고, 다른 업체도 자격을 우대합니다.</li>
+<li><strong>식수 규모를 증명:</strong> 일부 실장 공고는 일평균 600식 이상 경험을 직접 요구합니다. '몇 인분을 조리했는가'를 경력에 남기는 것이 중요합니다.</li>
+<li><strong>관리경험:</strong> 위생점검, 조리인력 관리, 메뉴·식단 기획, 고객 피드백 대응이 실장급에서 반복됩니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>삼구에프에스 · 과천경마공원 조리실장</td><td><strong>조리자격증 필수</strong> · 일평균 600식 이상 경험 요구. 식품안전·위생 지식, 팀워크 역량 요구. 유관 실무·관련 자격·다양한 요리·고객서비스 경험 우대.</td><td><a href="https://www.invione.com/jobs/recruitment/all/detail/K120412607310007" target="_blank">고용24 출처 채용정보</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>본푸드서비스 · 대구 달성 조리실장</td><td>경력 3년+ / 정규직 / 주5 또는 주6 선택 / 09:00~18:30</td><td><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49877133?sc=621" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>온정에프엔비 · 본사 단체급식 조리사/실장</td><td>고졸 이상(졸업예정자 가능) · 신입 또는 <strong>경력 1년 이상</strong>. 조리 역량 요구. 인근거주, 차량소지, 대기업 근무경험, 즉시출근·장기근무 가능자 우대.</td><td><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49866578?sc=621" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>LSC푸드 · 본사 중앙조리팀 조리실장</td><td>조리실장 3년+ / 서울·경기·인천 지점 지원 / 조리사면허 우대 / 주5일</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54023552" target="_blank">사람인</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>금강웰빙푸드 · 본사 지원팀 조리실장</td><td>학력·경력 무관. 성실성·적응성·협동심·꼼꼼함 등 역량을 제시한 공고이며 별도 필수 자격증은 명시되지 않음.</td><td><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/50018786?PageGbn=MST&sc=226" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>준푸드시스템 · 주방실장</td><td>고용24 검색결과 기준 경력 1년 / 학력무관 / 주6일</td><td><a href="https://m.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?academicGbn=&academicGbnoEdu=noEdu&cert=5007910&licParam=5007910&sortField=mmSal&sortOrderBy=DESC" target="_blank">고용24 검색</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>LSC푸드 서울 고등학교 조리실장</td><td>학력무관 / <strong>경력 3년+</strong> / 해당직무 경험 / 조리기능사 등 우대 / 주5일</td><td><a href="https://m.saramin.co.kr/job-search/view?cn=subway&amp;cns=recently-list&amp;rec_idx=51594702" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>동원홈푸드 경북 조리실장</td><td>학력무관 / 경력 3년+ / <strong>조리기능사 1개 필수</strong> / 단체급식·병원 경력 우대</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=51835956" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>LSC푸드 학교 조리실장</td><td>학력무관 / 단체급식 조리경력 2년+ / 연 4,500만원+ / 주5일</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53914240" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>삼구FS 과천경마공원 조리실장</td><td>학력무관 / 조리자격증 필수 / <strong>일평균 600식 이상 경험</strong> / 월 403만원 사례</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54581390" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>참푸드시스템 학교 조리실장</td><td>학력무관 · <strong>경력 7년 이상</strong> · 학교급식 경험, 단체급식 조리공정 운영 경험, 위생기준 준수·점검 능력, 조리인력 관리·소통 역량 요구.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54741794" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>본푸드서비스 · 대구 달성 조리실장</td><td>경력 3년+ / 정규직 / 주5 또는 주6 선택 / 09:00~18:30</td><td><strong>연 4,000~4,800만원</strong></td></tr>
+<tr><td>온정에프엔비 · 본사 단체급식 조리사/실장</td><td>정규직 · 주5일(월~금) 06:00~16:00 · 경기 평택시 · 본사 단체급식 조리사/조리실장.</td><td>월 350~450만원(면접 후 결정)</td></tr>
+<tr><td>LSC푸드 · 본사 중앙조리팀 조리실장</td><td>조리실장 3년+ / 서울·경기·인천 지점 지원 / 조리사면허 우대 / 주5일</td><td><strong>연 4,000~5,000만원+</strong></td></tr>
+<tr><td>금강웰빙푸드 · 본사 지원팀 조리실장</td><td>정규직(수습 3개월) · 주5일(월~금) 08:30~17:30 · 탄력근무제 · 충남 천안 본사 지원팀 조리실장.</td><td>회사 내규(면접 후 결정)</td></tr>
+<tr><td>준푸드시스템 · 주방실장</td><td>고용24 검색결과 기준 경력 1년 / 학력무관 / 주6일</td><td><strong>월 450~500만원</strong></td></tr></table>
+<div class="notice"><strong>해석 주의:</strong> 월급이 높은 조리실장 공고는 새벽근무·주6일·장시간 근무가 포함되는 경우가 있습니다. 따라서 '연봉'만으로 직업의 질을 판단하지 않고 실제 근무시간과 휴일을 함께 확인해야 합니다.</div>
+
+</div></details>
+</section>
+
+<section class="job trackA" id="job-a3">
+<h3>A-3. 급식업체 사업장 운영관리</h3>
+<div class="job-intro"><p>주방 하나를 넘어 식수, 인력, 발주·재고, 손익, 위생, 고객사 대응까지 관리하는 역할입니다. 조리실장 경험에서 기업 운영직으로 이동하는 중간 다리로 볼 수 있습니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+
+
+
+
+<table>
+<tr><th>요구자격</th><td>회사별 상이. 조리자격 우대, 일부 직무는 영양사 면허 필수.</td></tr>
+<tr><th>경력</th><td>관리자급은 3~5년 이상 요구 사례가 많음.</td></tr>
+<tr><th>학력</th><td>회사별 상이 — <span class="warn">확인 필요</span>.</td></tr>
+<tr><th>실제 업무</th><td>식수·인력·손익·고객사·위생·조리품질·발주·재고 관리.</td></tr>
+<tr><th>지역 이동성</th><td>높음. 대형 위탁급식사는 전국 사업장을 보유하는 경우가 많음.</td></tr>
+<tr><th>2~3년 내 진입</th><td>팀장급은 제한적. 조리실장/사업장 관리 보조 직급부터 접근하는 것이 현실적.</td></tr>
+</table>
+<div class="section-note" style="border-left:5px solid var(--trackA);background:var(--trackAsoft)">
+<strong>이 직무는 어떤 키워드로, 어디서 찾아야 하나?</strong>
+<p>이 직군은 회사마다 명칭이 달라 <strong>“급식업체 사업장 운영관리” 하나만 검색하면 공고를 많이 놓칠 수 있습니다.</strong></p>
+<table>
+<tr><th>검색 키워드</th><th>주로 찾게 되는 직무</th></tr>
+<tr><td><code>단체급식 운영관리</code></td><td>본사 또는 권역별 급식 사업장 운영관리</td></tr>
+<tr><td><code>급식 본사 운영관리 조리사</code></td><td>조리사 경력을 기반으로 본사 관리업무까지 수행하는 직무</td></tr>
+<tr><td><code>FS 운영관리</code></td><td>Food Service 사업장의 인력·손익·위생·고객사 관리</td></tr>
+<tr><td><code>FS SV</code> / <code>급식 SV</code></td><td>여러 급식 사업장을 순회·관리하는 Supervisor</td></tr>
+<tr><td><code>급식 운영팀</code> / <code>급식 운영팀장</code></td><td>본사 운영조직 또는 권역 관리직</td></tr>
+</table>
+<p><strong>검색처:</strong> 고용24에서는 위 키워드를 각각 검색하고, 사람인·잡코리아에서는 <code>단체급식 + 운영</code>, <code>FS + 운영관리</code> 조합으로 검색하는 것이 좋습니다. 대형 위탁급식기업 채용페이지에서는 <code>FS</code>, <code>운영</code>, <code>SV</code>를 각각 검색하십시오.</p>
+<p class="source-note">2025~2026 공고 확인 결과 SPC GFS는 <strong>FS-SV</strong>, 현대캐터링시스템은 <strong>운영팀 운영관리</strong>, 다른 업체는 <strong>본사 운영관리 조리사</strong>라는 명칭을 사용했습니다. 즉 동일·유사 직무가 서로 다른 이름으로 채용되고 있습니다.</p>
+</div>
+
+
+</div></details>
+</section>
+
+<section class="job trackA" id="job-a4">
+<h3>A-4. 군부대 민간조리원 (공무직근로자)</h3>
+<div class="job-intro"><p><strong>군인이 아니라 민간 근로자</strong>로서 병영식당에서 조리하는 직종입니다. 육군·해군·공군 및 국군병원 등에서 부대별로 공무직근로자를 모집합니다. 채용은 특정 군 전체의 단일 정기시험이 아니라 각 부대·기관의 공고 형태로 나오는 경우가 많습니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+
+
+<table>
+<tr><th>고용형태</th><td>공무직근로자 / 기간의 정함이 없는 근로계약 사례 다수. <strong>공무원 신분과는 다름.</strong></td></tr>
+<tr><th>학력</th><td>학력무관 사례 다수.</td></tr>
+<tr><th>조리자격</th><td>부대마다 다름. 필수인 공고도 있고, 조리기능사·영양사·위생사 등을 우대하는 공고도 있음.</td></tr>
+<tr><th>경력</th><td>경력무관~1년 필수~2년 우대 등 부대별 차이 큼. 대량급식 경험 우대가 반복적으로 확인됨.</td></tr>
+<tr><th>급여</th><td>2026 사례 기준 기본 월급 약 <strong>233~236만원 전후</strong>가 확인됨. 급식비·교통비·명절상여·복지포인트 등은 부대/규정에 따라 별도. 정확한 연 총보수는 개별 공고 확인 필요.</td></tr>
+<tr><th>실제 업무</th><td>식재료 검수·전처리, 밥/국/반찬 조리, 정량배식, 조리병 지도·교육, 취사장 위생, 기구·물자관리.</td></tr>
+<tr><th>특수조건</th><td>이른 출근/순환근무 가능. 일부 공고는 자차 필요, 타 부대 취사장 파견 또는 야외훈련 조리지원 가능.</td></tr>
+<tr><th>지역 이동성</th><td><strong>구직 기회는 높음</strong> — 전국 군부대에서 공고 발생. 단, 채용 후 배우자 전근에 따라 자동 전보되는 직업으로 볼 수는 없음. 이사 시 새 부대 공고에 다시 지원해야 할 가능성이 높음.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">매우 높음</span>. 현재 대량조리 경험과 조리자격이 직접 연결됨.</td></tr>
+</table>
+
+
+
+<div class="section-note">
+<strong>이 직무는 무엇으로 검색해야 하나?</strong><br>
+채용사이트에서 <code>급식 사업장 운영관리</code>, <code>단체급식 운영관리</code>, <code>FS 운영관리</code>, <code>FS SV</code>, <code>급식 운영팀</code>, <code>본사 운영관리 조리사</code>를 각각 검색하는 것이 좋습니다. 기업마다 같은 업무를 <strong>운영관리 / 운영팀장 / FS-SV / 본사 운영관리</strong>처럼 다르게 부르기 때문입니다.<br><br>
+<strong>확인처:</strong> 고용24 → 키워드 검색 / 사람인·잡코리아 → 직무+단체급식 검색 / 대형 급식기업 채용페이지에서 <code>FS</code>, <code>운영</code>, <code>SV</code> 검색.
+</div>
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>조리기능사:</strong> 필수 또는 우대로 반복 등장합니다. 민간조리원 지원 범위를 넓히는 핵심 자격입니다.</li>
+<li><strong>대량조리 1년 이상 증빙:</strong> 군부대·학교·식당 대량조리 경험을 우대하는 공고가 반복됩니다.</li>
+<li><strong>자체 출퇴근·운전:</strong> 외곽 부대 특성상 출퇴근 가능 여부와 운전면허가 실제 경쟁력이 됩니다.</li>
+<li><strong>공공채용 서류 준비:</strong> 응시원서, 경력증명, 자격증 사본, 결격사유·신원조회 관련 절차에 익숙해질 필요가 있습니다.</li>
+<li><strong>근무환경 확인:</strong> 새벽/교대, 타 취사장 지원, 야외훈련 지원 여부를 공고문에서 반드시 확인해야 합니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>상태</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>육군 제8기동사단 · 민간조리원</td><td>학력무관. <strong>단체급식 등 조리경력 2년 이상 우대</strong>, 조리·영양·위생 관련 자격 우대.</td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJ20842609220002" target="_blank">고용24</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>육군 제12사단 · 민간조리원</td><td>만 18세 이상, 학력·성별 제한 없음 · 조리업무 가능자. 대량조리 등 조리분야 경력 또는 조리사·영양사 등 관련 자격 우대.</td><td><a href="https://www.inje.go.kr/portal/participation/job/recruit?articleSeq=254087" target="_blank">인제군청</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>육군 제7군단 · 민간조리원</td><td>학력무관 · <strong>조리경력 최소 1년 필수</strong> · 조리분야 관련 자격 조건.</td><td><a href="https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJ20832609100002" target="_blank">고용24</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>육군 포천지역 민간조리원</td><td>학력무관 · 조리경력 1년 이상 우대 · 한식·양식·중식 조리기능사 우대 · 기업체·관공서·학교 등 민간조리 경험 및 장기근무 가능자 우대.</td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJK4002609170006" target="_blank">고용24</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>해군 제2함대 221기지대 · 민간조리원</td><td>2026.9.15~9.28 모집 / 인천 옹진군 백령면 / 공무직 1명. 상세 자격요건은 첨부 공고문 확인 필요.</td><td><a href="https://www.korea.kr/archive/recruitInfoView.do?dataId=394658" target="_blank">정책브리핑</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>공군 제8145부대 · 민간조리원</td><td>학력·경력 무관 · 한식조리기능사·영양사·제과제빵기능사 등 관련 자격 우대.</td><td><a href="https://www.invione.com/jobs/recruitment/all/detail/KJKT002608130002" target="_blank">고용24 출처 채용정보</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>해병대 · 민간조리원</td><td>조리 관련 자격·면허 다수 소지 우대 · <strong>단체급식소 등 조리경력 2년 이상 우대</strong>.</td><td><a href="https://www.work24.go.kr/wk/a/b/1570/empDetailView.do?wantedAuthNo=KJSP002607230002" target="_blank">고용24</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>육군 제5383부대 · 민간조리원</td><td>무기계약 / 자체 출퇴근 / 운전 우대 / 조리기능사 우대 / 조리업무 1년 이상 우대 / 월 225만원대</td><td><a href="https://www.wonju.go.kr/www/selectBbsNttView.do?bbsNo=161&amp;key=313&amp;nttNo=471324" target="_blank">원주시청</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>육군 제2군단 512방공대대 · 민간조리원</td><td>전처리·조리·정량배식·조리교육·취사장 위생관리 / 서류전형 후 면접·실기 전형 사례</td><td><a href="https://www.chuncheon.go.kr/cityhall/administrative-info/notice-info/other-agency-notice-announcement/?bbsId=BBSMSTR_000000000161&amp;flag=view&amp;nttId=500990" target="_blank">춘천시청</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td><strong>육군 제12사단</strong></td><td>공무직·정년까지 무기계약 · 주5일 · 기본 08:30~17:30, 부대 사정에 따라 06:00~15:00 · 취사·전처리·저장·위생·조리병 지도.</td><td>기본급 약 225만원 + 급식비·법정수당·명절휴가비·복지포인트</td></tr>
+<tr><td><strong>육군 제8기동사단</strong></td><td>무기계약 · 주5일 40시간 · 06:00/09:00/10:00 시작 근무 가능 · 타 부대 취사장 순환근무 및 협의 시 야외훈련 조리지원 가능.</td><td>월 236만원 이상</td></tr>
+<tr><td><strong>육군 제7군단</strong></td><td>무기계약 · 주5일 40시간 · 전처리·조리·배식·조리교육·취사장 위생관리.</td><td>월 234만원 이상</td></tr>
+<tr><td><strong>해군 제2함대 221기지대</strong></td><td>인천 옹진군 백령면 / 9.15~9.28</td><td>민간조리원 1명 / 공무직. 세부 자격·보수는 첨부 HWP 확인 필요.</td></tr>
+<tr><td><strong>공군 제8145부대</strong></td><td>주5일 40시간 · 식품 보관·육안검사·조리·식당 위생관리.</td><td>월 233만원대</td></tr></table>
+
+<h4>민간조리원 자격조건을 읽을 때 특히 볼 것</h4>
+<ul>
+<li><strong>조리자격이 필수인지 우대인지:</strong> 계룡대 제2경비단 2026 공고는 조리 관련 자격증과 자차를 필수로 두었지만, 다른 부대는 자격증을 우대로 둡니다.</li>
+<li><strong>대량급식 경력:</strong> 군부대·학교 등 대량급식 1~2년 경력을 우대하는 공고가 반복적으로 확인됩니다.</li>
+<li><strong>자가 출퇴근:</strong> 외곽 부대는 대중교통 접근성이 낮아 자차 소유/운전 가능 여부가 실제 조건이 될 수 있습니다.</li>
+<li><strong>신원·결격사유:</strong> 대한민국 국적, 국가공무원법상 결격사유 여부, 신원조회 등 공공기관 특유의 심사조건이 붙을 수 있습니다.</li>
+<li><strong>근무형태:</strong> 06:00 출근, 순환근무, 소초 이동, 타 부대 파견식 근무, 야외훈련 조리지원 여부를 반드시 확인해야 합니다.</li>
+</ul>
+
+<details><summary>참고: 2026년 다른 군부대 채용 사례</summary><div class="inside">
+<ul>
+<li><a href="https://gyeryong.go.kr/job/html/sub02/0201.html?category=01&file_id=59925&mode=D&no=24c7a5e97de9507b8ee4d2ca1e4ea351" target="_blank">육군본부 제2경비단(계룡대)</a> — 조리 관련 자격증·자차 필수, 군부대/학교 대량급식 2년 이상 우대.</li>
+<li><a href="https://www.yw.go.kr/jobs/basic/userJobInfoView.do?jobDiv=G&jobNo=1144&n=602" target="_blank">제1891부대</a> — 경력·학력무관, 월 2,343,170원, 주5일/40시간 사례.</li>
+<li><a href="https://www.inje.gangwon.kr/portal/participation/job/recruit?articleSeq=251488" target="_blank">육군 제3군단</a> — 기본급 2,133,170원 + 급식비 16만원 + 교통보조비 7만원, 명절상여·복지포인트 등 별도 사례.</li>
+<li><a href="https://www.wonju.go.kr/www/selectBbsNttView.do?bbsNo=161&integrDeptCode=&key=313&nttNo=486380&pageIndex=7&searchCnd=all&searchCtgry=&searchKrwd=" target="_blank">육군 제5383부대</a> — 월 2,343,170원, 조리기능사·대량조리 1년 이상 우대 사례.</li>
+<li><a href="https://www.gojobs.go.kr/apmView.do?empmnsn=292611" target="_blank">육군 제1군단 나라일터 공고</a> — 민간조리원 2명 포함 공무직 채용 사례.</li>
+</ul>
+</div></details>
+
+<div class="notice"><strong>민간조리원의 이동성 해석:</strong> 군부대가 전국에 많다는 점에서는 재취업 지역 선택지가 넓지만, 특정 부대 공무직으로 채용된 뒤 배우자의 전근에 맞춰 전국 부대로 자유롭게 전보되는 구조라고 확인된 것은 아닙니다. 따라서 이 문서에서는 <strong>“전국 재취업 가능성은 높음 / 고용 유지 상태의 지역 이동성은 확인 필요”</strong>로 평가합니다.</div>
+
+</div></details>
+</section>
+
+<h2><span style="color:var(--trackB)">TRACK B</span> · 기업 전문직</h2>
+<p>조리와 매장운영 경험을 <strong>기업의 운영·개발·생산관리 역량</strong>으로 전환하는 트랙입니다. 현장 Track보다 OA, 원가, 표준화, 보고·협업 역량의 비중이 커지고, 직무에 따라 학력 장벽의 차이가 큽니다.</p>
+<div class="section-note">아래 급여는 직업 전체 평균이 아니라 2026년 실제 공개 채용사례입니다. 회사·지역·경력에 따라 차이가 크며, 공개되지 않은 항목은 <strong>확인 필요</strong>로 표시합니다.</div>
+
+<section class="job trackB" id="job-b1">
+<h3>B-1. 외식 Franchise Supervisor (SV)</h3>
+<div class="job-intro"><p>본사 소속으로 여러 가맹점의 매출, QSC(Quality·Service·Cleanliness), 신규점 Open, 점주 커뮤니케이션과 운영 프로세스를 관리합니다. 직접 매장을 운영해본 경험을 기업 직무로 가장 직접적으로 전환하기 좋은 후보입니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+<table>
+<tr><th>요구자격</th><td>국가자격 필수인 경우는 드물고 운전, Excel·PowerPoint·Word 등 OA 활용을 요구/우대하는 사례가 있음. 조리산업기사는 외식·조리 이해도를 보여주는 보조 스펙.</td></tr>
+<tr><th>경력</th><td>최근 사례 기준 약 2~3년 이상. 외식업·가맹점 운영 또는 매장관리 경력의 직접 연관성이 큼.</td></tr>
+<tr><th>학력</th><td>학력무관 사례 존재. 기업별 상이.</td></tr>
+<tr><th>연봉</th><td>2026년 확인 사례 약 <strong>3,000~5,000만원</strong>. 기업·직급에 따라 차이 큼.</td></tr>
+<tr><th>지역 이동성</th><td><strong>중~높음</strong>. 프랜차이즈 기업·브랜드가 있는 주요 도시에서 경력 이전 가능. 다만 동일 회사 내 자유로운 전보 여부는 회사별 확인 필요.</td></tr>
+<tr><th>실제 업무</th><td>가맹점 운영점검, 매출·KPI, QSC, 신규매장 Open 지원, 점주 상담, 교육, 프로모션 실행, 본사 보고.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">높음</span>. 현재 매장운영 경력을 직무언어로 정리하고 OA·운전·수치관리 역량을 보완하면 직접 지원을 검토할 수 있음.</td></tr>
+</table>
+
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>운전면허 + 실제 운전:</strong> 전국/권역 가맹점 방문 때문에 가장 반복적으로 등장하는 조건입니다.</li>
+<li><strong>Excel·문서작성:</strong> 매출분석, 점검보고, 운영자료 작성 때문에 OA 역량이 반복적으로 요구·우대됩니다.</li>
+<li><strong>매장 운영·QSC 경험:</strong> 현재 매장운영 경험을 '매출·원가·재고·위생·고객응대'로 분해해 경력기술서에 적는 것이 중요합니다.</li>
+<li><strong>커뮤니케이션:</strong> 점주 설득, 가맹점 교육, 본사 보고가 핵심이므로 단순 조리경력보다 관리·소통 사례가 필요합니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>포트코퍼레이션(포트캔커피) · Franchise SV</td><td>~2026.9.30 / 정규직 / <strong>경력 1년 이상</strong> / 서울 / 외식업·영업관리·고객지원 직무</td><td><a href="https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1525778" target="_blank">잡플래닛</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>카페인24 SV</td><td>경력 2년 이상 / 연 3,000~4,000만원</td><td><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49968488?sc=640" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>외식 프랜차이즈 SV</td><td>경력 3년 이상 / 학력무관 / 연 3,000~5,000만원 / Excel·PPT·Word·운전 관련 조건</td><td><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/49394587" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>그레이핍플 SV</td><td>신입 가능 / 학력무관 / 운전 가능 / 컴퓨터 관련 자격 / 차량·Excel·문서작성·커뮤니케이션 우대</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=51376702" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>오꾸닭·쌀통닭 SV</td><td>신입·경력 / 학력무관 / 자차·운전 / 문서작성 / 전국 외근 / 가맹점 교육·점검·오픈지원</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=49863706" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>성백F&amp;S 외식 SV</td><td>신입 또는 경력 2년+ / 고졸+ / 신규점 오픈·QSC·매출활성화·운영데이터 분석</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54430917" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>청년팩토리 SV</td><td>학력무관 · <strong>경력 1~5년</strong> · SV/외식 프랜차이즈 이해, 커뮤니케이션·기본 PC 활용 요구. 조리·프랜차이즈 실무, Excel, 차량소지·운전가능, 관련 전공 등 우대.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54498194" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>카페인24 SV</td><td>경력 2년 이상</td><td>연 3,000~4,000만원</td></tr>
+<tr><td>외식 프랜차이즈 SV</td><td>경력 3년 이상 학력무관 Excel·PPT·Word·운전 관련 조건</td><td>연 3,000~5,000만원</td></tr></table>
+</div></details>
+</section>
+
+<section class="job trackB" id="job-b2">
+<h3>B-2. 외식기업 Menu 개발 / 조리 R&amp;D</h3>
+<div class="job-intro"><p>판매 가능한 메뉴를 기획하고 Recipe, 원가, 조리공정, 매장 Test와 Manual까지 표준화하는 직무입니다. 대량조리와 실제 매장운영 경험을 동시에 활용할 수 있지만 기업별 학력·경력 장벽의 편차가 큽니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+<table>
+<tr><th>요구자격</th><td>메뉴개발, Recipe 표준화, 원가계산, 조리 Manual 제작 역량. 조리자격증은 도움이 되지만 채용의 절대조건은 회사별 상이.</td></tr>
+<tr><th>경력</th><td>약 2~5년 이상 사례. '조리경력'보다 실제 메뉴개발 경험을 별도로 요구하는 기업도 있음.</td></tr>
+<tr><th>학력</th><td><strong>학력무관부터 조리 관련 학위 요구까지 편차가 큼.</strong> 비전공자는 지원 가능한 기업군을 선별할 필요가 있음.</td></tr>
+<tr><th>연봉</th><td>3,000만원 이상 사례 확인. 상당수 기업은 회사내규로 공개 → 상단 범위는 <span class="warn">확인 필요</span>.</td></tr>
+<tr><th>지역 이동성</th><td><strong>중간</strong>. 본사·R&amp;D 조직이 수도권 및 특정 산업지역에 집중되는 경향.</td></tr>
+<tr><th>실제 업무</th><td>메뉴기획, Recipe 개발·표준화, 원가계산, 원부자재 Spec, 매장 Test, 조리 Manual, 가맹점 교육.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">가능</span>하지만 자격증만으로는 부족. 메뉴개발 Portfolio, Recipe 표준화, 원가표 등을 준비하는 편이 유리.</td></tr>
+</table>
+
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>Recipe 문서화:</strong> '맛있게 조리'가 아니라 계량된 레시피와 제조 공정을 문서로 남기는 능력이 핵심입니다.</li>
+<li><strong>원가계산:</strong> 메뉴 제조원가·식재료 Spec·수율 계산 경험이 반복됩니다.</li>
+<li><strong>메뉴개발 Portfolio:</strong> 개발 목적 → Recipe → 원가 → 조리공정 → 대량화 → 매장 적용 결과를 3~5개 사례로 만드는 것이 좋습니다.</li>
+<li><strong>현장교육/품질점검:</strong> 가맹점 교육과 메뉴 품질 안정화 경험도 R&amp;D 직무에 포함됩니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>학력무관 메뉴개발 R&amp;D</td><td>경력 2년 이상 / 학력무관 / 연 3,000만원 이상 사례</td><td><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/49940242" target="_blank">잡코리아</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>EGGDROP 메뉴개발</td><td>조리 관련 학위 및 외식/프랜차이즈 경력 요구 사례 — 학력장벽이 있는 기업 유형</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54109307" target="_blank">사람인</a></td></tr>
+<tr><td>—</td><td>91컴퍼니 · 외식 프랜차이즈 메뉴개발 R&amp;D</td><td><strong>경력 5년 이상</strong> · 공고에 따라 초대졸 이상. 인근거주, 컴퓨터활용, 차량소지, 유관업무 경험, 즉시출근·장기근무 가능자 우대. 포트폴리오 제출.</td><td><a href="https://kr.indeed.com/q-%EC%99%B8%EC%8B%9D-%EB%A9%94%EB%89%B4%EA%B0%9C%EB%B0%9C-%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0.html" target="_blank">Indeed 검색</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>귀한사람들 외식 R&amp;D</td><td>경력 3~12년 / 전문대+ / 메뉴개발뿐 아니라 구매·업체·원가·품질·교육까지 담당</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=51718599" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>여행가자고 F&amp;B 메뉴개발</td><td>경력 3년+ / <strong>학력무관</strong> / 메뉴개발·레시피 정립·브랜드 런칭</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=52334991" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>육회바른연어 R&amp;D</td><td>학력무관 / 고경력 포지션 / 메뉴 상품화·운영 안정화 / 원가설계·레시피 / 다점포 운영 경험 강조</td><td><a href="https://m.saramin.co.kr/job-search/view?rec_idx=54864251" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>학력무관 메뉴개발 R&amp;D</td><td>경력 2년 이상 학력무관 사례</td><td>연 3,000만원 이상</td></tr>
+<tr><td>EGGDROP 메뉴개발</td><td>조리 관련 학위 및 외식/프랜차이즈 경력 요구 사례 — 학력장벽이 있는 기업 유형</td><td>공고 상세 참조</td></tr></table>
+</div></details>
+</section>
+
+<section class="job trackB" id="job-b3">
+<h3>B-3. HMR / Central Kitchen 메뉴개발 R&amp;D</h3>
+<div class="job-intro"><p>국·탕·반찬·도시락·밀키트 같은 제품을 '맛있는 Recipe'에서 끝내지 않고 공장에서 반복 생산 가능한 공정으로 전환합니다. 대량조리 경험을 기업 R&amp;D로 연결할 수 있는 후보입니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+<table>
+<tr><th>요구자격</th><td>식품 메뉴개발, 식품가공 공정 이해, Recipe 표준화, 관능평가 및 협업 능력. HMR·대량생산·HACCP 경험 우대 사례.</td></tr>
+<tr><th>경력</th><td>최신 확인 사례에서 팀원급 <strong>3년 이상</strong>, 팀장급 5년 이상.</td></tr>
+<tr><th>학력</th><td><strong>학력무관 사례 확인.</strong> 식품 관련 전공은 우대.</td></tr>
+<tr><th>연봉</th><td>2026년 MS푸드 사례 <strong>연 4,500만원 / 주40시간</strong>.</td></tr>
+<tr><th>지역 이동성</th><td><strong>중간</strong>. 식품공장·Central Kitchen 소재지에 종속되는 편.</td></tr>
+<tr><th>실제 업무</th><td>신제품 Concept, Recipe 개발 및 공정화, 원가·수율 기반 배합, 관능평가, 양산 적용·개선.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="warn">중간</span>. 현재 조리경력만으로 즉시 R&amp;D 3년 요건을 충족한다고 단정하기 어려움. 메뉴개발/표준화 Portfolio 또는 중간 경력 확보 필요.</td></tr>
+</table>
+
+<div class="section-note"><strong>진행공고 검색어:</strong> <code>HMR 메뉴개발</code>, <code>식품 R&amp;D HMR</code>, <code>Central Kitchen R&amp;D</code>, <code>식품제조 메뉴개발</code>, <code>양산전환 R&amp;D</code>. 외식 R&amp;D와 식품공장 R&amp;D가 섞여 나오므로 <strong>대량생산·공정화·수율·OEM/ODM</strong> 키워드가 있는 공고를 우선 확인합니다.</div>
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>대량생산 관점:</strong> Recipe뿐 아니라 공정설계, 수율, 양산 적용을 이해해야 합니다.</li>
+<li><strong>식품/HACCP 지식:</strong> 외식 메뉴개발보다 식품제조 규격과 위생관리 지식의 비중이 높습니다.</li>
+<li><strong>Portfolio 방향:</strong> 50~100인분 Batch 조리, 냉장·냉동 후 품질, 수율·원가 변화 등을 기록하면 현재 경험을 HMR 언어로 전환하는 데 도움이 됩니다.</li>
+<li><strong>학력장벽 확인:</strong> 학력무관 실무형 공고도 있지만 대기업·상위 R&amp;D는 식품 관련 석사 등 높은 학력을 요구하는 사례도 있습니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>MS푸드 · 식품제조 탕 메뉴개발 R&amp;D</td><td>경력 3~20년 / 학력무관 / 팀원 3년+ / HMR·대량생산·HACCP 경험 우대 / <strong>연 4,500만원</strong></td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54871270" target="_blank">사람인</a></td></tr>
+<tr><td>—</td><td>HMR / Central Kitchen R&amp;D</td><td><span class="need-check">현재 진행공고 미확인</span><br>2026.9.28 검색에서 사용자 조건과 직접 맞는 진행중 공고는 확인하지 못함. 직전 MS푸드 공고는 9.26 마감. 아래 검색어로 주기적 확인 권장.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54871270" target="_blank">직전 MS푸드 공고</a></td></tr>
+<tr><td><span class="year-tag">2025</span></td><td>삼양식품 HMR 개발팀장</td><td>식품 관련 석사+ / HMR 개발 12년+ / 공정설계·품질향상·조직운영 — 상위 R&amp;D 학력장벽 참고</td><td><a href="https://www.bzpp.co.kr/biz/businessDetailView/BR250327A00195" target="_blank">채용정보</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>MS푸드 식품제조 메뉴개발</td><td>학력무관 / 팀원 3년+ / Recipe 공정화·원가·수율·관능평가·양산 / 연 4,500만원 사례</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54871270" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>MS푸드 · 식품제조 탕 메뉴개발 R&amp;D</td><td>경력 3~20년 학력무관 팀원 3년+ HMR·대량생산·HACCP 경험 우대 <strong></strong></td><td>연 4,500만원</td></tr></table>
+</div></details>
+</section>
+
+<section class="job trackB" id="job-b4">
+<h3>B-4. 식품 제조 / Central Kitchen 생산·HACCP 관리</h3>
+<div class="job-intro"><p>직접 메뉴를 개발하기보다 생산계획, 조리·가공공정, 인력, 재고, 위생과 HACCP 기록을 관리합니다. 조리 현장을 이해하면서 관리·사무 역량을 키우고 싶은 경우 현실적인 기업직 전환 후보입니다.</p></div>
+<details><summary>요구자격 · 경력 · 연봉 · 준비사항 · 채용사례 보기</summary><div class="inside">
+<table>
+<tr><th>요구자격</th><td>HACCP·생산공정 이해, 전산/OA, Excel, 문서관리. 운전 필수인 사례도 있음. 식품 관련 전공은 우대 사례.</td></tr>
+<tr><th>경력</th><td>신입~경력 다양. 최신 해청정 사례는 동종업계 <strong>최소 1년 이상 우대</strong>.</td></tr>
+<tr><th>학력</th><td>회사별 상이. 최신 사례는 고졸~석사 지원 가능, 식품 관련 전문대 이상 우대.</td></tr>
+<tr><th>연봉</th><td>해청정 2026 사례 <strong>연 3,000~5,000만원</strong>.</td></tr>
+<tr><th>지역 이동성</th><td><strong>중~높음</strong>. 전국 식품 제조업체에서 직무가 존재하지만 공장 소재지에 영향을 받음.</td></tr>
+<tr><th>실제 업무</th><td>생산공정, 생산인원, HACCP 서류, 구매·재고, 위생, 일반사무, 생산실적 관리.</td></tr>
+<tr><th>2~3년 내 진입</th><td><span class="good">높음</span>. HACCP 교육 + Excel/OA + 현재의 대량조리·재고·발주 경험을 연결하면 R&amp;D보다 진입장벽이 낮은 편.</td></tr>
+</table>
+
+<div class="prep">
+<h4>공고에서 반복되는 준비사항 · 무엇을 준비할까?</h4>
+<ul>
+<li><strong>HACCP 실무 이해:</strong> 서류만이 아니라 현장 위생·공정 기준을 이해해야 합니다.</li>
+<li><strong>Excel + 생산데이터:</strong> 생산계획·실적·재고·원가·수율 관리가 반복됩니다.</li>
+<li><strong>ERP/MES:</strong> 경력직으로 올라갈수록 ERP·MES 데이터 관리 경험이 우대됩니다.</li>
+<li><strong>현장 리더십:</strong> 생산인원·공정 흐름·부서 협업 경험이 중요합니다.</li>
+<li><strong>학력장벽:</strong> 신입 생산/HACCP 보조에서도 전문대 이상을 요구하는 기업이 있어, 비전공·무학위 지원 가능 공고를 선별해야 합니다.</li>
+</ul>
+</div>
+<h4>2025~현재 공고</h4>
+<table><tr><th>연도</th><th>기업/직무</th><th>필요 조건 (자격요건 · 우대사항)</th><th>링크</th></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>샐러드판다 · 식품 품질관리/HACCP</td><td>학력무관 · 경력직 공고. 현재 상세 자격요건은 공개 페이지에서 제한적으로 표시됨. 동일 직무의 과거 공고에서는 신입·경력 무관 및 관련 경력자·인근거주자 우대를 명시.</td><td><a href="https://m.saramin.co.kr/job-search/view?rec_idx=54998325" target="_blank">사람인</a></td></tr>
+<tr><td><span class="active-tag">진행중</span></td><td>해청정 · 식품가공 생산관리</td><td>경력 1년+ 우대 / 고졸~석사 / 생산공정·구매·재고·HACCP / OA·Excel 우대 / 운전 필수 / <strong>연 3,000~5,000만원</strong></td><td><a href="https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=K172222609160001" target="_blank">고용24</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>온샘 생산관리/HACCP</td><td><strong>전문대졸 이상</strong> · 신입 또는 경력 5~15년으로 표기되며 식품제조 생산관리 경험을 보유역량으로 요구.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54150554" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>싱싱푸드 공정·HACCP 보조</td><td><strong>전문대졸 이상</strong> · 경력무관(신입 가능). 품질관리 경험, 차량소지, 인근거주, 식품공학·제과제빵 관련 배경 우대.</td><td><a href="https://www.saramin.co.kr/zf_user/jobs/relay/pop-view?rec_idx=55025052" target="_blank">사람인</a></td></tr>
+<tr><td><span class="year-tag">2026</span></td><td>조이푸드 생산관리</td><td><strong>전문대졸 이상 · 식품 생산관리 경력 5~10년</strong>. 생산계획·실적관리, 공정흐름 이해, 협업·소통 요구. HACCP, 식품가공설비, ERP·MES, 원가·수율 개선, 현장 리더십 우대.</td><td><a href="https://m.saramin.co.kr/job-search/view?rec_idx=55092976" target="_blank">사람인</a></td></tr></table>
+
+<h4>근무조건(현재 진행중인 공고)</h4>
+<table><tr><th>기업/직무</th><th>근무 환경</th><th>급여</th></tr>
+<tr><td>해청정 · 식품가공 생산관리</td><td>경력 1년+ 우대 고졸~석사 생산공정·구매·재고·HACCP OA·Excel 우대 운전 필수 <strong></strong></td><td>연 3,000~5,000만원</td></tr></table>
+</div></details>
+</section>
+
+<h2>현재 단계의 준비 우선순위</h2>
+<p>우선순위는 <strong>1~4번을 공통 기반</strong>으로 준비한 뒤, 희망하는 방향에 따라 두 갈래로 나누었습니다. 따라서 5~6번은 서로 앞뒤 순서가 아니라 <strong>Track 방향별 선택 준비</strong>입니다.</p>
+
+<h3 style="margin-top:20px">공통 기반 · 1~4</h3>
+<table>
+<tr><th>우선순위</th><th>준비할 것</th><th>왜 우선순위가 높은가?</th><th>어디에서 필요로 하나?</th></tr>
+<tr><td><strong>1</strong></td><td><strong>한식조리기능사 → 조리사면허</strong></td><td>현재 실무경력을 공식 자격으로 보완하는 가장 빠른 방법입니다. 실제 공고에서 <strong>필수 또는 우대</strong>로 반복되며, 자격이 없으면 지원 자체가 막히는 공고가 존재합니다.</td><td><a class="job-link a" href="#job-a1">단체급식 전문 조리사</a><a class="job-link a" href="#job-a2">조리실장·조리책임자</a><a class="job-link a" href="#job-a4">군부대 민간조리원</a><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a></td></tr>
+<tr><td><strong>2</strong></td><td><strong>현재 2~3년 경력을 증빙 가능한 형태로 정리</strong></td><td>“식당을 운영했다”보다 <strong>대량조리·식수·발주·재고·원가·위생·인력관리</strong>를 숫자로 증명해야 현재 경험이 전문경력으로 해석됩니다.</td><td><a class="job-link a" href="#job-a1">단체급식 전문 조리사</a><a class="job-link a" href="#job-a2">조리실장·조리책임자</a><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a><a class="job-link a" href="#job-a4">군부대 민간조리원</a><a class="job-link b" href="#job-b1">Franchise SV</a><a class="job-link b" href="#job-b2">외식 Menu·조리 R&amp;D</a><a class="job-link b" href="#job-b3">HMR·Central Kitchen R&amp;D</a><a class="job-link b" href="#job-b4">식품 생산·HACCP 관리</a></td></tr>
+<tr><td><strong>3</strong></td><td><strong>단체급식 경력 1~2년 확보</strong></td><td>조리실장·운영관리 공고에서 일반 외식경력과 별도로 <strong>단체급식 경력</strong>을 요구하는 사례가 많습니다. 현재 경력과 현장 관리자 직군 사이의 가장 큰 Gap을 메웁니다.</td><td><a class="job-link a" href="#job-a1">단체급식 전문 조리사</a><a class="job-link a" href="#job-a2">조리실장·조리책임자</a><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a><a class="job-link a" href="#job-a4">군부대 민간조리원</a></td></tr>
+<tr><td><strong>4</strong></td><td><strong>한식조리산업기사</strong></td><td>모든 공고의 필수조건은 아니지만 조리·급식의 <strong>중간관리 전문성</strong>을 보여주는 장기 스펙입니다. 기능사와 현장경력 이후 관리자 방향과 잘 맞습니다.</td><td><a class="job-link a" href="#job-a2">조리실장·조리책임자</a><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a><a class="job-link a" href="#job-a1">단체급식 전문 조리사</a></td></tr>
+</table>
+
+<div class="grid">
+<div>
+<h3 style="color:var(--trackA);margin-top:18px">운영·관리 방향</h3>
+<p class="small">급식 운영관리 또는 Franchise SV처럼 <strong>여러 사업장·매장을 관리하는 방향</strong>을 선택할 때 우선합니다.</p>
+<table>
+<tr><th>우선순위</th><th>준비할 것</th><th>왜 필요한가?</th><th>해당 직군</th></tr>
+<tr><td><strong>5</strong></td><td><strong>운전면허 + 실제 운전</strong></td><td>사업장·가맹점을 순회하는 직무에서 반복되는 실질 조건입니다.</td><td><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a><a class="job-link b" href="#job-b1">Franchise SV</a><a class="job-link a" href="#job-a4">군부대 민간조리원</a></td></tr>
+<tr><td><strong>6</strong></td><td><strong>Excel / OA + 원가·손익 관리</strong></td><td>식수·매출·원가율·재고·인건비를 관리하고 본사에 보고하기 위한 핵심 관리역량입니다.</td><td><a class="job-link a" href="#job-a3">급식업체 사업장 운영관리</a><a class="job-link b" href="#job-b1">Franchise SV</a></td></tr>
+</table>
+</div>
+
+<div>
+<h3 style="color:var(--trackB);margin-top:18px">R&amp;D·식품제조 방향</h3>
+<p class="small">외식 Menu R&amp;D, HMR 또는 식품 생산관리처럼 <strong>Recipe·양산·식품공정으로 확장하는 방향</strong>을 선택할 때 우선합니다.</p>
+<table>
+<tr><th>우선순위</th><th>준비할 것</th><th>왜 필요한가?</th><th>해당 직군</th></tr>
+<tr><td><strong>5</strong></td><td><strong>HACCP / 식품위생 실무지식</strong></td><td>식품제조·Central Kitchen의 공정과 위생기록을 이해하기 위한 기반이며 현장 조리관리에도 활용됩니다.</td><td><a class="job-link b" href="#job-b4">식품 생산·HACCP 관리</a><a class="job-link b" href="#job-b3">HMR·Central Kitchen R&amp;D</a><a class="job-link a" href="#job-a2">조리실장·조리책임자</a></td></tr>
+<tr><td><strong>6</strong></td><td><strong>메뉴개발 Portfolio / Recipe 표준화</strong></td><td>R&amp;D에서는 자격증보다 실제 메뉴를 계량·원가화·공정화할 수 있다는 직접적인 증거가 중요합니다.</td><td><a class="job-link b" href="#job-b2">외식 Menu·조리 R&amp;D</a><a class="job-link b" href="#job-b3">HMR·Central Kitchen R&amp;D</a></td></tr>
+</table>
+</div>
+</div>
+
+<div class="section-note"><strong>읽는 방법:</strong> 먼저 <strong>1 → 2 → 3 → 4</strong>를 공통 기반으로 보고, 이후 진로에 따라 <strong>운영·관리 5 → 6</strong> 또는 <strong>R&amp;D·식품제조 5 → 6</strong>을 선택하는 구조입니다. 두 방향을 동시에 준비해야 한다는 의미는 아닙니다.</div>
+
+<h2>공식 확인처 / 검색 루트</h2>
+<ul>
+<li><a href="https://www.work24.go.kr/" target="_blank">고용24</a> — 민간·공공 일자리 및 단체급식/민간조리원 검색</li>
+<li><a href="https://www.gojobs.go.kr/" target="_blank">나라일터</a> — 국방부·각 군 공무직 채용 확인</li>
+<li><a href="https://www.korea.kr/archive/recruitInfoList.do" target="_blank">대한민국 정책브리핑 채용정보</a> — 나라일터 제공 공공채용 확인</li>
+<li><a href="https://www.q-net.or.kr/" target="_blank">Q-Net</a> — 한식조리기능사·한식조리산업기사 국가자격 공식정보</li>
+</ul>
+
+<footer>
+<p><strong>자료 성격:</strong> 2026-09-28 시점의 진행공고와 2025~2026 마감공고를 함께 비교한 Career Research 문서입니다. 개별 공고는 조기마감·변경될 수 있으며, 급여는 직업 전체 평균이 아니라 명시된 채용사례입니다.</p>
+<p><strong>확인 필요 원칙:</strong> 공개 본문에서 확인되지 않는 학력·자격·연봉·수당·전보 가능성은 임의 추정하지 않았습니다. 실제 지원 전에는 반드시 원 공고와 첨부 공고문을 다시 확인하십시오.</p>
+<p>Git 관리 권장 파일명: <code>index.html</code>로 변경하면 GitHub Pages의 첫 화면으로 바로 사용할 수 있습니다.</p>
+</footer>
+
+</div>
+</body>
+</html>
