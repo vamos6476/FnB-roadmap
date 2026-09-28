@@ -1,4 +1,4 @@
-## How to update
+## How to update (Just for me)
 
 When a new version of the career roadmap HTML is generated, replace the existing `index.html` with the new file and push the changes to GitHub.
 
