@@ -59,6 +59,159 @@ details .inside{padding:0 16px 16px}
 .job:target{outline:3px solid rgba(52,64,84,.16);outline-offset:4px}
 footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:20px 12px 60px}h1{font-size:28px}table{display:block;overflow-x:auto}.overview{padding:16px}.current-state{font-size:19px}.tree-svg{min-height:520px}}
+
+/* ===== Mobile-first readability layer ===== */
+.mobile-tree{display:none}
+@media(max-width:760px){
+  html{scroll-padding-top:12px}
+  body{font-size:15px;line-height:1.58}
+  .wrap{padding:12px 10px 48px}
+  .hero{padding:20px 16px;border-radius:16px;margin-bottom:14px}
+  h1{font-size:27px;letter-spacing:-.025em}
+  h2{font-size:22px;margin:30px 2px 12px;line-height:1.3}
+  h3{font-size:18px;line-height:1.35}
+  h4{font-size:15px;line-height:1.4;margin-top:18px}
+  .small,.meta{font-size:12px}
+  .badge{font-size:12px;padding:4px 8px}
+
+  .overview{padding:16px 12px;margin:14px 0 26px;border-radius:16px}
+  .current-state{font-size:17px;line-height:1.45;margin-bottom:14px}
+  .current-state span{display:block;margin-top:3px;font-size:14px}
+  .desktop-tree{display:none}
+  .mobile-tree{display:grid;gap:12px}
+  .m-root{background:#101828;color:#fff;border-radius:14px;padding:14px;text-align:center;font-weight:800}
+  .m-root small,.m-track small{display:block;font-weight:500;opacity:.82;margin-top:2px}
+  .m-track{border-radius:14px;padding:14px;display:grid;gap:8px}
+  .m-track>strong{text-align:center;font-size:16px}
+  .m-track>small{text-align:center;margin:-5px 0 4px}
+  .m-a{background:var(--trackAsoft);border:1px solid #b7e7d5}
+  .m-b{background:var(--trackBsoft);border:1px solid #ffd4aa}
+  .m-track a{display:block;background:#fff;border:1px solid rgba(16,24,40,.10);border-radius:10px;padding:11px 12px;color:#101828;font-weight:700;font-size:14px;text-decoration:none}
+
+  .grid{grid-template-columns:1fr;gap:10px}
+  .card,.job{padding:16px 13px;margin:10px 0;border-radius:14px}
+  .job.trackA,.job.trackB{border-left-width:4px}
+  .job-intro{font-size:14px;margin-bottom:10px}
+  .section-note,.notice,.prep{padding:12px 13px;border-radius:10px;font-size:14px}
+  .prep ul{padding-left:18px}
+  li{margin:5px 0}
+
+  details{border-radius:10px}
+  summary{padding:13px 12px;font-size:14px;line-height:1.4}
+  .job details summary{gap:8px}
+  .job details summary::after{font-size:18px;flex:0 0 auto}
+  details .inside{padding:0 10px 12px}
+
+  /* Desktop tables become readable stacked records on phones. */
+  table{display:block;width:100%;border:0;background:transparent;margin:10px 0 18px;font-size:13px;overflow:visible}
+  table tbody{display:block;width:100%}
+  table tr{display:block;background:#fff;border:1px solid var(--line);border-radius:11px;margin:8px 0;padding:4px 10px;box-shadow:0 2px 5px rgba(16,24,40,.025)}
+  table tr:first-child{display:none}
+  table td,table th{display:grid;grid-template-columns:minmax(76px,31%) 1fr;gap:8px;width:100%;padding:8px 2px;border-bottom:1px solid #eef1f4;white-space:normal;overflow-wrap:anywhere}
+  table td:last-child{border-bottom:0}
+  table td::before{font-weight:800;color:#667085;font-size:11px;line-height:1.45}
+  table td a{overflow-wrap:anywhere}
+  table code{white-space:normal;overflow-wrap:anywhere}
+
+  /* Generic labels based on common table widths. JS below replaces these accurately. */
+  table td::before{content:attr(data-label)}
+  .year-tag,.active-tag{font-size:11px}
+  .job-link{font-size:11px;padding:4px 7px}
+
+  footer{margin-top:34px}
+}
+@media(max-width:380px){
+  .wrap{padding-left:7px;padding-right:7px}
+  .hero,.card,.job{padding-left:11px;padding-right:11px}
+  table td,table th{grid-template-columns:72px 1fr}
+}
+
+
+/* ===== Mobile table layout fix v2 ===== */
+@media(max-width:760px){
+  /* Each original table row becomes one full-width card. */
+  table tr{
+    padding:0;
+    overflow:hidden;
+  }
+
+  /* IMPORTANT:
+     Do not reserve a permanent left column for data-label.
+     Every field uses the full card width. */
+  table td,
+  table th{
+    display:block;
+    width:100%;
+    padding:10px 12px;
+    border-bottom:1px solid #eef1f4;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+
+  /* Header/field name is completely separated above the value. */
+  table td::before{
+    content:attr(data-label);
+    display:block;
+    width:100%;
+    margin:0 0 7px;
+    padding:0;
+    color:#667085;
+    font-size:11px;
+    line-height:1.3;
+    font-weight:800;
+  }
+
+  /* Value can now use the ENTIRE width below its label. */
+  table td > *{
+    max-width:100%;
+  }
+
+  /* Compact cells such as year/status/link don't need excessive height. */
+  table td[data-label="연도"],
+  table td[data-label="상태"],
+  table td[data-label="링크"]{
+    padding-top:9px;
+    padding-bottom:9px;
+  }
+
+  /* Definition-style 2-column tables:
+     title is a distinct top strip, content uses full width below. */
+  table tr:has(> th:first-child + td) > th:first-child{
+    display:block;
+    width:100%;
+    padding:9px 12px;
+    margin:0;
+    background:#f2f4f7;
+    border-bottom:0;
+    color:#344054;
+    font-weight:800;
+    font-size:13px;
+  }
+  table tr:has(> th:first-child + td) > td{
+    display:block;
+    width:100%;
+    padding:11px 12px 13px;
+    border-bottom:0;
+  }
+  table tr:has(> th:first-child + td) > td::before{
+    display:none;
+    content:none;
+  }
+
+  /* Some tables have long text/list content. Give it the whole line. */
+  table td p,
+  table td ul,
+  table td ol{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  /* Avoid narrow columns inherited from previous mobile rule. */
+  table td, table th{
+    grid-template-columns:none !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -75,7 +228,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 
 <section class="overview">
   <div class="current-state">현재 상황 : <span>분식·백반 매장운영 약 2~3년 + 대량조리 경험</span></div>
-  <svg class="tree-svg" viewBox="0 0 1100 430" role="img" aria-label="현장 전문직과 기업 전문직 Career Overview">
+  <svg class="tree-svg desktop-tree" viewBox="0 0 1100 430" role="img" aria-label="현장 전문직과 기업 전문직 Career Overview">
     <defs>
       <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
         <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".10"/>
@@ -120,6 +273,24 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
       <text x="702" y="372">양산 Recipe · 공정화</text><text x="947" y="372">생산공정 · 위생 · 재고</text>
     </g>
   </svg>
+  <div class="mobile-tree" aria-label="모바일 Career Overview">
+    <div class="m-root">조리·외식 Career Roadmap<small>2~3년 내 전문성 있는 진로 탐색</small></div>
+    <div class="m-track m-a">
+      <strong>TRACK A · 현장 전문직</strong><small>대량조리 · 현장운영 · 조리관리 중심</small>
+      <a href="#job-a1">A-1. 단체급식 전문 조리사</a>
+      <a href="#job-a2">A-2. 조리실장 · 조리책임자</a>
+      <a href="#job-a3">A-3. 급식업체 운영관리</a>
+      <a href="#job-a4">A-4. 군부대 민간조리원</a>
+    </div>
+    <div class="m-track m-b">
+      <strong>TRACK B · 기업 전문직</strong><small>운영 · 개발 · 생산관리로 경험 확장</small>
+      <a href="#job-b1">B-1. Franchise SV</a>
+      <a href="#job-b2">B-2. 외식 Menu · 조리 R&amp;D</a>
+      <a href="#job-b3">B-3. HMR · Central Kitchen R&amp;D</a>
+      <a href="#job-b4">B-4. 식품 생산 · HACCP 관리</a>
+    </div>
+  </div>
+
 </section>
 
 <h2><span style="color:var(--trackA)">TRACK A</span> · 현장 전문직</h2>
@@ -541,5 +712,21 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </footer>
 
 </div>
+
+<script>
+/* Convert table header names into per-cell mobile labels without changing desktop markup. */
+document.querySelectorAll('table').forEach(table=>{
+  const rows=[...table.querySelectorAll('tr')];
+  if(!rows.length) return;
+  const headers=[...rows[0].querySelectorAll('th')].map(th=>th.textContent.trim());
+  if(!headers.length) return;
+  rows.slice(1).forEach(row=>{
+    [...row.children].forEach((cell,i)=>{
+      if(cell.tagName==='TD' && headers[i]) cell.setAttribute('data-label',headers[i]);
+    });
+  });
+});
+</script>
+
 </body>
 </html>
